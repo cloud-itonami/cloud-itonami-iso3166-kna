@@ -52,8 +52,8 @@ in-house compliance department.
 | Ops | `:engagement/intake` · `:jurisdiction/assess` · `:filing/draft` · `:filing/submit` |
 | Flagship HARD check | `notice-period-insufficient` (Procurement and Contract (Administration) Act, Cap. 23.36 s.13's minimum 42-day/2-newspaper tender-solicitation notice window, independently recomputed against the engagement's own declared notice/close dates and newspaper count -- see `docs/adr/0001-architecture.md`) |
 | Compliance catalog | `src/statute/facts.cljk` -- Companies Act (Cap. 21.03), Protection of Employment Act (Cap. 18.27), Licences on Businesses and Occupations Act (Cap. 18.20) |
-| Tests | `clojure -M:dev:test` |
-| Demo | `clojure -M:dev:run` |
+| Tests | `kbb -M:dev:test` |
+| Demo | `kbb -M:dev:run` |
 | Architecture ADR | [`docs/adr/0001-architecture.md`](docs/adr/0001-architecture.md) |
 
 `:filing/submit` is never in any phase's `:auto` set -- human sign-off
