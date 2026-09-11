@@ -51,7 +51,7 @@ in-house compliance department.
 | Governor | `:market-entry-compliance-governor` |
 | Ops | `:engagement/intake` · `:jurisdiction/assess` · `:filing/draft` · `:filing/submit` |
 | Flagship HARD check | `notice-period-insufficient` (Procurement and Contract (Administration) Act, Cap. 23.36 s.13's minimum 42-day/2-newspaper tender-solicitation notice window, independently recomputed against the engagement's own declared notice/close dates and newspaper count -- see `docs/adr/0001-architecture.md`) |
-| Compliance catalog | `src/statute/facts.cljc` -- Companies Act (Cap. 21.03), Protection of Employment Act (Cap. 18.27), Licences on Businesses and Occupations Act (Cap. 18.20) |
+| Compliance catalog | `src/statute/facts.cljk` -- Companies Act (Cap. 21.03), Protection of Employment Act (Cap. 18.27), Licences on Businesses and Occupations Act (Cap. 18.20) |
 | Tests | `clojure -M:dev:test` |
 | Demo | `clojure -M:dev:run` |
 | Architecture ADR | [`docs/adr/0001-architecture.md`](docs/adr/0001-architecture.md) |
@@ -77,7 +77,7 @@ this repo documents both findings rather than picking one:
   Nevis-based business is payable to the Nevis Island Administration,
   not the federal Inland Revenue Department (Income Tax Act ss.83-84).
 
-See `src/marketentry/facts.cljc` for the full citation trail.
+See `src/marketentry/facts.cljk` for the full citation trail.
 
 ## No robotics premise -- digital/data service exemption
 
@@ -121,7 +121,7 @@ phase's `:auto` set -- it always requires human sign-off.
   purchase or Sustainable Growth Fund contribution) is a genuinely
   different regulatory domain from business market entry, deliberately
   investigated and excluded from this catalog -- see
-  `src/marketentry/facts.cljc`.
+  `src/marketentry/facts.cljk`.
 
 ## Capability layer
 
@@ -148,7 +148,7 @@ Alongside the market-entry / statute catalogs, this repo carries a
 `com-junkawasaki/root`) — national dishes, protected products, beverages,
 crafts, festivals and heritage sites for Saint Kitts and Nevis:
 
-- `src/culture/facts.cljc` — the catalog, source of truth (keyed by
+- `src/culture/facts.cljk` — the catalog, source of truth (keyed by
   uppercase ISO3, mirroring `statute.facts`).
 - `schema/culture.edn` — DataScript schema.
 - `data/culture-tx.edn` — derived DataScript tx-data (regenerated from
